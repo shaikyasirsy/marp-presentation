@@ -55,30 +55,35 @@ footer {
 
 ---
 
-## Agenda
+## What is Marp?
 
-- What this product does
-- Development & deployment
-- Architecture and algorithms
-- How to contribute (version control)
+Marp (Markdown Presentation) is a powerful tool to create presentations using Markdown. It supports:
+
+- Technical presentations
+- Documentation slides
+- Academic and conference talks
+- Teaching materials
+- Hosting via GitHub Pages
 
 ---
 
-## Quick install
+## Installation
 
 ```bash
+# Install Marp CLI globally
 npm install -g @marp-team/marp-cli
-marp slides.md --pdf
+
+# One-time use without install
+npx @marp-team/marp-cli@latest
+
+# Local project install
+tnpm install --save-dev @marp-team/marp-cli
 ```
 
 ---
-
----
-backgroundImage: url('./bg.jpeg')
-backgroundSize: cover
-backgroundPosition: center
----
-
+<!-- _backgroundImage: url('./bg.jpeg') -->
+<!-- _backgroundSize: cover -->
+<!-- _backgroundPosition: center -->
 # Our product at a glance
 
 > Streamlined pipelines, robust observability, and tiny deploys.
@@ -93,42 +98,54 @@ backgroundPosition: center
 
 ---
 
-## Algorithmic complexity (example)
+## Algorithmic complexity example
 
-\[
-T(n) = O(n)
-\]
+Average-case deduplication complexity:
 
-\[
+$$
+T(n) = O(n) \quad \text{(hashing + lookup)}
+$$
+
+Sorting then deduplication:
+
+$$
 T(n) = O(n \log n)
-\]
+$$
 
 ---
 
 ## Pipeline latency estimation
 
-\[
-\text{throughput} = \frac{W}{\text{avg\\_service\\_time}}
-\]
+Given $W$ workers and average service time:
 
-For \(M\) messages, work is \(O(Ms)\).
+$$
+\text{throughput} = \frac{W}{\text{avg\_service\_time}}
+$$
+
+For $M$ messages of size $s$, total work:
+
+$$
+O(Ms)
+$$
 
 ---
 
-## Contributing
+## Best Practices
 
-1. Fork repo.
-2. Edit `slides.md`.
-3. PR with changes.
+- Keep slides focused and minimal
+- Use consistent styling
+- Test output formats
+- Optimize images before including
 
 ---
 
 ## Contact & Resources
 
 - Email: **23f3000880@ds.study.iitm.ac.in**
+- Repo contains `slides.md` and `bg.jpeg`
 
 ---
 
 # Thank you!
 
-Questions? Ping: 23f3000880@ds.study.iitm.ac.in
+Questions? Ping: **23f3000880@ds.study.iitm.ac.in**
