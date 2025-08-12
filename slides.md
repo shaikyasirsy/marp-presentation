@@ -77,13 +77,17 @@ npm install -g @marp-team/marp-cli
 npx @marp-team/marp-cli@latest
 
 # Local project install
-tnpm install --save-dev @marp-team/marp-cli
+npm install --save-dev @marp-team/marp-cli
 ```
 
 ---
 <!-- _backgroundImage: url('./bg.jpeg') -->
 <!-- _backgroundSize: cover -->
 <!-- _backgroundPosition: center -->
+![bg](./bg.jpeg)
+![bg fit](./bg.jpeg)
+![bg cover](./bg.jpeg)
+
 # Our product at a glance
 
 > Streamlined pipelines, robust observability, and tiny deploys.
@@ -103,13 +107,13 @@ tnpm install --save-dev @marp-team/marp-cli
 Average-case deduplication complexity:
 
 $$
-T(n) = O(n) \quad \text{(hashing + lookup)}
+T(n) = O(n) \\ \text{(hashing + lookup)}
 $$
 
 Sorting then deduplication:
 
 $$
-T(n) = O(n \log n)
+T(n) = O(n \\log n)
 $$
 
 ---
@@ -119,7 +123,7 @@ $$
 Given $W$ workers and average service time:
 
 $$
-\text{throughput} = \frac{W}{\text{avg\_service\_time}}
+\\text{throughput} = \\frac{W}{\\text{avg\\_service\\_time}}
 $$
 
 For $M$ messages of size $s$, total work:
